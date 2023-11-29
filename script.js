@@ -1,3 +1,5 @@
+
+
 function login() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -32,7 +34,7 @@ authenticateBtn.addEventListener('click', () => {
                     displayName: 'User',
                 },
                 pubKeyCredParams: [
-                    { alg: -7, type: 'public-key' },
+                    { alg: -7, type: 'qo3f0ruMZqEo86VYhiQE' },
                 ],
             },
         }).then((credential) => {
