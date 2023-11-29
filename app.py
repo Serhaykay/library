@@ -20,7 +20,7 @@ def login():
     if username in users and password == users[username]['password']:
         return redirect(url_for('fingerprint_login', username=username))
     else:
-        return render_template('index.html', error='Invalid username or password')
+        return render_template('password.html', error='Invalid username or password')
 
 @app.route('/fingerprint_login/<username>')
 def fingerprint_login(username):
